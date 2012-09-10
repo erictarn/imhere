@@ -95,53 +95,90 @@
         </div>
     </div>
     
-    <?php
-        $content = file_get_contents("http://imherebreakthrough.tumblr.com/rss");
-        $x = new SimpleXmlElement($content);
-        echo "<ul>";
-        for ($i = 0; $i <= 8; $i++) {
-            $entry = $x->channel->item[$i];
-            preg_match_all('/<img[^>]+>/i',$entry->description, $result); 
-            echo "<li><a href='$entry->link' title='$entry->title'>" . $result[0][0] . "</a></li>";
-        }
-        echo "</ul>";
-    ?>
-    
-    <?php
-        date_default_timezone_set('America/New_York');
-        $url = 'http://search.twitter.com/search.atom?q=%23ImHere%20OR%20%23ImHereIVote';
-        $ch = curl_init($url);
-        curl_setopt ($ch, CURLOPT_RETURNTRANSFER, TRUE);
-        $xml = curl_exec ($ch);
-        curl_close ($ch);
-        
-        //If you want to see the response from Twitter, uncomment this next part out:
-        //echo "<p>Response:</p>";
-        //echo "<pre>".htmlspecialchars($xml)."</pre>";
-        
-        $affected = 0;
-        $twelement = new SimpleXMLElement($xml);
-        
-        for ($i = 0; $i <= 2; $i++) {
-            $entry = $twelement->entry[$i];
-            $text = trim($entry->title);
-            $author = trim($entry->author->name);
-            $time = strtotime($entry->published);
-            $id = $entry->id;
-            echo "<a href=" . $entry->link["href"] . "><p>Tweet from ".$author.": <strong>".$text."</strong>  <em>Posted ".date('n/j/y g:i a',$time)."</em></p></a>";
-        }
-    ?>
-    
-    
     <header>
         <img src="/images/header_logo.png" alt="#ImHere For Immigrant Women" />
     </header>
     
     <section class="articles">
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
+        <article>
+            <div class="video"><iframe width="550" height="308" src="http://www.youtube.com/embed/ZGnyW4exCMw" frameborder="0" allowfullscreen></iframe></div>
+            <p class="noheader"><a href="#">#ImHere</a> to put the <a href="#">#humanrights</a> of <a href="#">#immigrant</a> women on the national agenda. Are you?
+        <a href="#">@breakthrough</a> <a href="#">bit.ly/PcRcGb</a></p>
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        </article>
+        
+        <article>
+            <a class="share" href="https://twitter.com/share?text=<?php echo urlencode("Lorem's Ipusums text."); ?>&hashtags=ImHere" target="_blank"><img src="images/icon_share.png" />Share</a>
+            <a class="share" href="http://imherebreakthrough.tumblr.com/"><img src="images/icon_photos.png" />Photos</a>
+            <a class="share" href="https://votolatino.turbovote.org/register/start"><img src="images/icon_vote.png" />Vote</a>
+            <a class="share" href="http://breakthrough.tv/explore/issue/womens-human-rights/women_and_immigration/"><img src="images/icon_learn.png" />Learn</a>
+        </article>
+        
+        <article class="social">
+            
+            <div class="container">
+                <h1>Tumblr</h1>
+                <table>
+                    <?php
+                        $content = file_get_contents("http://imherebreakthrough.tumblr.com/rss");
+                        $x = new SimpleXmlElement($content);
+                        
+                        for ($i = 0; $i <= 8; $i++) {
+                            if ($i % 3 == 0) { echo "<tr>"; }
+                            $entry = $x->channel->item[$i];
+                            preg_match_all('/src=("[^"]*")/i',$entry->description, $result); 
+                            echo "<td><a href='$entry->link' title='$entry->title'><img " . $result[0][0] . " width='70' /></a></td>";
+                            if ($i % 3 == 2) { echo "</tr>"; }
+                        }
+                    ?>
+                </table>
+            </div>
+            
+            <div class="container">
+                <h1>Twitter</h1>
+                <div class="blackcontainer">
+                    <ul class="tweets">
+                        <?php
+                            date_default_timezone_set('America/New_York');
+                            $url = 'http://search.twitter.com/search.atom?q=%23ImHere%20OR%20%23ImHereIVote';
+                            $ch = curl_init($url);
+                            curl_setopt ($ch, CURLOPT_RETURNTRANSFER, TRUE);
+                            $xml = curl_exec ($ch);
+                            curl_close ($ch);
+
+                            //If you want to see the response from Twitter, uncomment this next part out:
+                            //echo "<p>Response:</p>";
+                            //echo "<pre>".htmlspecialchars($xml)."</pre>";
+
+                            $affected = 0;
+                            $twelement = new SimpleXMLElement($xml);
+
+                            for ($i = 0; $i <= 2; $i++) {
+                                $entry = $twelement->entry[$i];
+                                $text = trim($entry->title);
+                                $author = trim($entry->author->name);
+                                $time = strtotime($entry->published);
+                                $id = $entry->id;
+                                echo "<li>";
+                                echo "<img src='" . $entry->link[1]["href"] . "' />";
+                                echo "<span>";
+                                echo "<h2><a href='" . $entry->link["href"] . "'>" . $author . "</a></h2>";
+                                echo "<p>" . $text . "</p>";
+                                echo "<p class='timestamp'>" . date('n/j/y g:i a',$time) . "</p>";
+                                echo "</span>";
+                                echo "</li>";
+                            }
+                        ?>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        
+        <article class="learn">
+            <h1>Learn</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        </article>
     </section>
     
     <footer>
@@ -150,10 +187,10 @@
         <strong>Our Partners</strong>
         <nav>
             <a href="http://breakthrough.tv" class="logo"><img src="/images/footer_logo.png" alt="by Breakthrough.tv" /></a>
-            <a href="/">Contact</a>
-            <a href="/">Privacy Policy</a>
-            <a href="/">Terms of Use</a>
-            <a href="/">About Breakthrough</a>
+            <a href="http://breakthrough.tv/about-us/contact-us/">Contact</a>
+            <a href="http://breakthrough.tv/privacy-policy/">Privacy Policy</a>
+            <a href="http://breakthrough.tv/terms-of-use/">Terms of Use</a>
+            <a href="http://breakthrough.tv/about-us/mission/">About Breakthrough</a>
         </nav>
     </footer>
     
@@ -162,7 +199,10 @@
             Compatibility.BGSize.create();
         }
         if( !Modernizr.rgba ) {
-//            Compatibility.RGBA.update();
+            Compatibility.RGBA.update( [
+                { 'selector': 'article', 'hex': '000000', 'opacity': '75' },
+                { 'selector': 'footer', 'hex': '000000', 'opacity': '75' }
+            ] );
         }
     </script>
 </body>

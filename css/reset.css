@@ -34,7 +34,7 @@ body {
 	
 	/** Text sizing and styles **/
 	h1 {
-		font-size: 14px; font-weight: bold; color: #fff; text-transform: uppercase; background-color: #24abe2; border-top-left-radius: 5px; -moz-border-top-left-radius: 5px; -webkit-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-top-right-radius: 5px; -webkit-border-top-right-radius: 5px;
+		font-size: 14px; font-weight: bold; color: #fff; text-transform: uppercase; border-top-left-radius: 5px; -moz-border-top-left-radius: 5px; -webkit-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-top-right-radius: 5px; -webkit-border-top-right-radius: 5px;
 	}
 		h1 a, h2 a, h3 a, h4 a {
 			color: inherit; text-decoration: none;
