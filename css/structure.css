@@ -47,7 +47,7 @@ body {
 					margin-right: 0;
 				}
 			footer nav a {
-				color: inherit; text-transform: uppercase; font-weight: bold; vertical-align: middle;
+				color: inherit; text-transform: uppercase; vertical-align: middle;
 				margin-left: 5px;
 				display: inline-block;
 			}
@@ -59,4 +59,7 @@ body {
 				footer nav a:last-child:after {
 					content: none;
 					margin-right: 0;
+				}
+				footer nav a:hover {
+					color: #fff;
 				}

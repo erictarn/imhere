@@ -1,9 +1,3 @@
-/*
-======================
-Onepager Reset Styles
-======================
-*/
-
 /** All HTML elements **/
 * {
 	margin: 0; padding: 0; outline: 0;
@@ -40,16 +34,7 @@ body {
 	
 	/** Text sizing and styles **/
 	h1 {
-		font-size: 36px; font-weight: 600; line-height: 1.2em; letter-spacing: -1px;
-	}
-	h2 {
-		font-size: 38px; line-height: 1.2em; letter-spacing: -1px; color: #ea5c2a;
-	}
-	h3 {
-		font-size: 18px; color: #272727; line-height: 1.5em; letter-spacing: -1px;
-	}
-	h4 {
-		font-size: 14px; line-height: 1.5em;
+		font-size: 14px; font-weight: bold; color: #fff; text-transform: uppercase; background-color: #24abe2; border-top-left-radius: 5px; -moz-border-top-left-radius: 5px; -webkit-border-top-left-radius: 5px; border-top-right-radius: 5px; -moz-border-top-right-radius: 5px; -webkit-border-top-right-radius: 5px;
 	}
 		h1 a, h2 a, h3 a, h4 a {
 			color: inherit; text-decoration: none;

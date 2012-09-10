@@ -10,3 +10,33 @@ html {
 body {
 	width: 100%; min-height: 100%; min-width: 1020px;
 }
+
+section.articles article { text-align: center; }
+section.articles div.video { width: 550px; margin: 10px auto; border: 5px #24abe2 solid; -webkit-border-radius: 5px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; height: 308px; }
+section.articles h1 { width: 516px; margin: 10px auto 0 auto; padding: 4px 20px; }
+section.articles p { background-color: #fff; width: 520px; margin: 0 auto; padding: 18px; text-align: left; border-bottom-left-radius: 5px; -moz-border-bottom-left-radius: 5px; -webkit-border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; -moz-border-bottom-right-radius: 5px; -webkit-border-bottom-right-radius: 5px; }
+section.articles p.noheader { -webkit-border-radius: 5px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+section.articles a { color: #24abe2; }
+
+section.articles a.share { margin: 0 68px; display: inline-block; color: #fff; font-size: 14px; font-weight: bold; text-transform: uppercase; vertical-align: middle; }
+section.articles a.share img { display: block; margin-bottom: 4px; }
+
+article.social div {
+	background-color: #d1d2d4; 
+	width: 225px; padding: 5px; display: inline-block; margin: 0 10px; -webkit-border-radius: 5px; border-radius: 5px; -moz-border-radius: 5px;
+}
+article.social h1 {
+	width: 195px; margin: -5px 0 5px -5px;
+}
+/*article.social div { width: 235px; display: inline-block; margin: 0 10px; }
+article.social table { width: 100%; border: 5px #d1d2d4 solid; border-top: none; background-color: #000; table-layout: fixed; }
+article.social table td { height: 70px; width: 32%; overflow: hidden; display: inline-block; border: 1px solid #000; }
+.social table a { display: block; }*/
+.social table {
+	background-color: #000;
+	border: 5px solid #000; border-bottom-width: 4px; table-layout: fixed;
+}
+	.social td {
+		text-align: center;
+		border-bottom: 1px solid #000;
+	}
