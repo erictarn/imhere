@@ -39,7 +39,7 @@ body {
 			position: relative;
 		}
 			footer .logo {
-				left: 0; top: 50%; margin-top: -54px;
+				left: 0; top: -36px; margin-left: 0;
 				position: absolute;
 			}
 				footer .logo:after {

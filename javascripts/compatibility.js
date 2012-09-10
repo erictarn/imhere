@@ -52,9 +52,14 @@ var Compatibility = window.Compatibility || {};
 	Compatibility.RGBA = ( function() {
 		
 		return {
-			update: function( hex, opacity ) {
+			getIEFilter: function( hex, opacity ) {
 				var ieOpacity = opacity == 0 ? '00' : Math.floor(parseFloat(opacity) / 100 * 255).toString(16);
 				return 'progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr="#' + ieOpacity + hex + '", EndColorStr="#' + ieOpacity + hex + '")';
+			},
+			update: function( set ) {
+				$.each( set, function( i, e ) {
+					$( e.selector ).css( { 'background-color': Compatibility.RGBA.getIEFilter( e.hex, e.opacity ) } );
+				} )
 			}
 		}
 		

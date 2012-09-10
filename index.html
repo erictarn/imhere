@@ -42,7 +42,10 @@
             Compatibility.BGSize.create();
         }
         if( !Modernizr.rgba ) {
-//            Compatibility.RGBA.update();
+            Compatibility.RGBA.update( [
+                { 'selector': 'article', 'hex': '000000', 'opacity': '75' },
+                { 'selector': 'footer', 'hex': '000000', 'opacity': '75' }
+            ] );
         }
     </script>
 </body>
