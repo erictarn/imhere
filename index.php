@@ -13,6 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
     <script src="/javascripts/compatibility.js" type="text/javascript"></script>
     <script src="/javascripts/bar.js" type="text/javascript"></script>
+    <script src="/javascripts/application.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="btbar">
@@ -110,7 +111,7 @@
         
         <article>
             <a class="share" href="https://twitter.com/share?text=<?php echo urlencode("Lorem's Ipusums text."); ?>&hashtags=ImHere" target="_blank"><img src="images/icon_share.png" />Share</a>
-            <a class="share" href="http://imherebreakthrough.tumblr.com/"><img src="images/icon_photos.png" />Photos</a>
+            <a class="share" href="http://imherebreakthrough.tumblr.com/"><img src="images/icon_photos.png" />Photo</a>
             <a class="share" href="https://votolatino.turbovote.org/register/start"><img src="images/icon_vote.png" />Vote</a>
             <a class="share" href="http://breakthrough.tv/explore/issue/womens-human-rights/women_and_immigration/"><img src="images/icon_learn.png" />Learn</a>
         </article>
@@ -183,6 +184,23 @@
     
     <footer>
         <div class="partners">
+            <a href="http://acluga.org"><img src="images/logos/acluga.org.jpg" /></a>
+            <a href="http://africanservices.org"><img src="images/logos/africanservices.org.jpg" /></a>
+            <a href="http://awid.org"><img src="images/logos/awid.org.jpg" /></a>
+            <a href="http://ellabakercenter.org"><img src="images/logos/ellabakercenter.org.jpg" /></a>
+            <a href="http://immigrantjustice.org" style="display: none;"><img src="images/logos/immigrantjustice.org.jpg" /></a>
+            <a href="http://immigrationequality.org" style="display: none;"><img src="images/logos/immigrationequality.org.jpg" /></a>
+            <a href="http://latinainstitute.org" style="display: none;"><img src="images/logos/latinainstitute.org.jpg" /></a>
+            <a href="http://mujeresunidas.net" style="display: none;"><img src="images/logos/mujeresunidas.net.jpg" /></a>
+            <a href="http://ihollaback.org" style="display: none;"><img src="images/logos/ihollaback.org.jpg" /></a>
+            <a href="http://nysylc.org" style="display: none;"><img src="images/logos/nysylc.org.jpg" /></a>
+            <a href="http://onebillionrising.org" style="display: none;"><img src="images/logos/onebillionrising.org.jpg" /></a>
+            <a href="http://rebeccaproject.org" style="display: none;"><img src="images/logos/rebeccaproject.org.jpg" /></a>
+            <a href="http://sautiyetu.org" style="display: none;"><img src="images/logos/sautiyetu.org.jpg" /></a>
+            <a href="http://ushrnetwork.org" style="display: none;"><img src="images/logos/ushrnetwork.org.jpg" /></a>
+            <a href="http://thenyic.org" style="display: none;"><img src="images/logos/thenyic.org.jpg" /></a>
+            <a href="http://womensrefugeecommission.org" style="display: none;"><img src="images/logos/womensrefugeecommission.org.jpg" /></a>
+            <a href="http://thefbomb.org" style="display: none;"><img src="images/logos/thefbomb.org.jpg" /></a>
         </div>
         <strong>Our Partners</strong>
         <nav>
