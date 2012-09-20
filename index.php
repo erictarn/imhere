@@ -23,7 +23,7 @@
                 <h3>Get our emails!</h3>
                 <p class="join"><label for="f-email">Email Address</label> <input type="text" name="email" id="f-email" /> <button type="submit">Go</button></p>
                 <p>A global organization building a culture of human rights. <a href="./">Visit us</a></p>
-                <p class="action"><a href="https://www.z2systems.com/np/clients/breakthrough/donation.jsp" class="btbar-button-a">Donate</a></p>
+                <p class="action"><a href="https://www.z2systems.com/np/clients/breakthrough/donation.jsp" target="_blank" class="btbar-button-a">Donate</a></p>
             </div>
             <div class="logos">
                 <div class="wrap">
@@ -111,9 +111,9 @@
         
         <article>
             <a class="share" href="https://twitter.com/share?text=<?php echo urlencode("Lorem's Ipusums text."); ?>&hashtags=ImHere" target="_blank"><img src="images/icon_share.png" />Share</a>
-            <a class="share" href="http://imherebreakthrough.tumblr.com/"><img src="images/icon_photos.png" />Photo</a>
-            <a class="share" href="https://votolatino.turbovote.org/register/start"><img src="images/icon_vote.png" />Vote</a>
-            <a class="share" href="http://breakthrough.tv/explore/issue/womens-human-rights/women_and_immigration/"><img src="images/icon_learn.png" />Learn</a>
+            <a class="share" href="http://imherebreakthrough.tumblr.com/" target="_blank"><img src="images/icon_photos.png" />Photo</a>
+            <a class="share" href="https://votolatino.turbovote.org/register/start" target="_blank"><img src="images/icon_vote.png" />Vote</a>
+            <a class="share" href="http://breakthrough.tv/explore/issue/womens-human-rights/women_and_immigration/" target="_blank"><img src="images/icon_learn.png" />Learn</a>
         </article>
         
         <article class="social">
@@ -129,7 +129,7 @@
                             if ($i % 3 == 0) { echo "<tr>"; }
                             $entry = $x->channel->item[$i];
                             preg_match_all('/src=("[^"]*")/i',$entry->description, $result); 
-                            echo "<td><a href='$entry->link' title='$entry->title'><img " . $result[0][0] . " width='70' /></a></td>";
+                            echo "<td><a href='$entry->link' target='_blank' title='$entry->title'><img " . $result[0][0] . " width='70' /></a></td>";
                             if ($i % 3 == 2) { echo "</tr>"; }
                         }
                     ?>
@@ -164,7 +164,7 @@
                                 echo "<li>";
                                 echo "<img src='" . $entry->link[1]["href"] . "' />";
                                 echo "<span>";
-                                echo "<h2><a href='" . $entry->link["href"] . "'>" . $author . "</a></h2>";
+                                echo "<h2><a href='" . $entry->link["href"] . "' target='_blank'>" . $author . "</a></h2>";
                                 echo "<p>" . $text . "</p>";
                                 echo "<p class='timestamp'>" . date('n/j/y g:i a',$time) . "</p>";
                                 echo "</span>";
@@ -184,23 +184,23 @@
     
     <footer>
         <div class="partners">
-            <a href="http://acluga.org"><img src="images/logos/acluga.org.jpg" /></a>
-            <a href="http://africanservices.org"><img src="images/logos/africanservices.org.jpg" /></a>
-            <a href="http://awid.org"><img src="images/logos/awid.org.jpg" /></a>
-            <a href="http://ellabakercenter.org"><img src="images/logos/ellabakercenter.org.jpg" /></a>
-            <a href="http://immigrantjustice.org" style="display: none;"><img src="images/logos/immigrantjustice.org.jpg" /></a>
-            <a href="http://immigrationequality.org" style="display: none;"><img src="images/logos/immigrationequality.org.jpg" /></a>
-            <a href="http://latinainstitute.org" style="display: none;"><img src="images/logos/latinainstitute.org.jpg" /></a>
-            <a href="http://mujeresunidas.net" style="display: none;"><img src="images/logos/mujeresunidas.net.jpg" /></a>
-            <a href="http://ihollaback.org" style="display: none;"><img src="images/logos/ihollaback.org.jpg" /></a>
-            <a href="http://nysylc.org" style="display: none;"><img src="images/logos/nysylc.org.jpg" /></a>
-            <a href="http://onebillionrising.org" style="display: none;"><img src="images/logos/onebillionrising.org.jpg" /></a>
-            <a href="http://rebeccaproject.org" style="display: none;"><img src="images/logos/rebeccaproject.org.jpg" /></a>
-            <a href="http://sautiyetu.org" style="display: none;"><img src="images/logos/sautiyetu.org.jpg" /></a>
-            <a href="http://ushrnetwork.org" style="display: none;"><img src="images/logos/ushrnetwork.org.jpg" /></a>
-            <a href="http://thenyic.org" style="display: none;"><img src="images/logos/thenyic.org.jpg" /></a>
-            <a href="http://womensrefugeecommission.org" style="display: none;"><img src="images/logos/womensrefugeecommission.org.jpg" /></a>
-            <a href="http://thefbomb.org" style="display: none;"><img src="images/logos/thefbomb.org.jpg" /></a>
+            <a href="http://acluga.org" target="_blank"><img src="images/logos/acluga.org.jpg" /></a>
+            <a href="http://africanservices.org" target="_blank"><img src="images/logos/africanservices.org.jpg" /></a>
+            <a href="http://awid.org" target="_blank"><img src="images/logos/awid.org.jpg" /></a>
+            <a href="http://ellabakercenter.org" target="_blank"><img src="images/logos/ellabakercenter.org.jpg" /></a>
+            <a href="http://immigrantjustice.org" target="_blank" style="display: none;"><img src="images/logos/immigrantjustice.org.jpg" /></a>
+            <a href="http://immigrationequality.org" target="_blank" style="display: none;"><img src="images/logos/immigrationequality.org.jpg" /></a>
+            <a href="http://latinainstitute.org" target="_blank" style="display: none;"><img src="images/logos/latinainstitute.org.jpg" /></a>
+            <a href="http://mujeresunidas.net" target="_blank" style="display: none;"><img src="images/logos/mujeresunidas.net.jpg" /></a>
+            <a href="http://ihollaback.org" target="_blank" style="display: none;"><img src="images/logos/ihollaback.org.jpg" /></a>
+            <a href="http://nysylc.org" target="_blank" style="display: none;"><img src="images/logos/nysylc.org.jpg" /></a>
+            <a href="http://onebillionrising.org" target="_blank" style="display: none;"><img src="images/logos/onebillionrising.org.jpg" /></a>
+            <a href="http://rebeccaproject.org" target="_blank" style="display: none;"><img src="images/logos/rebeccaproject.org.jpg" /></a>
+            <a href="http://sautiyetu.org" target="_blank" style="display: none;"><img src="images/logos/sautiyetu.org.jpg" /></a>
+            <a href="http://ushrnetwork.org" target="_blank" style="display: none;"><img src="images/logos/ushrnetwork.org.jpg" /></a>
+            <a href="http://thenyic.org" target="_blank" style="display: none;"><img src="images/logos/thenyic.org.jpg" /></a>
+            <a href="http://womensrefugeecommission.org" target="_blank" style="display: none;"><img src="images/logos/womensrefugeecommission.org.jpg" /></a>
+            <a href="http://thefbomb.org" target="_blank" style="display: none;"><img src="images/logos/thefbomb.org.jpg" /></a>
         </div>
         <strong>Our Partners</strong>
         <nav>
