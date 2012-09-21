@@ -102,9 +102,8 @@
     
     <section class="articles">
         <article>
-            <div class="video"><iframe width="550" height="308" src="http://www.youtube.com/embed/ZGnyW4exCMw" frameborder="0" allowfullscreen></iframe></div>
-            <p class="noheader"><a href="#">#ImHere</a> to put the <a href="#">#humanrights</a> of <a href="#">#immigrant</a> women on the national agenda. Are you?
-        <a href="#">@breakthrough</a> <a href="#">bit.ly/PcRcGb</a></p>
+            <div class="video"><iframe width="640" height="308" src="http://www.youtube.com/embed/ZGnyW4exCMw" frameborder="0" allowfullscreen></iframe></div>
+            <p class="noheader"><a href="https://twitter.com/share?text=<?php echo urlencode("#ImHere to put the #humanrights of #immigrant women on the national agenda. Are you? @breakthrough"); ?>&hashtags=ImHere" class="rt"><img src="/images/rt_this.jpg" /></a><a href="#">#ImHere</a> to put the <a href="#">#humanrights</a> of <a href="#">#immigrant</a> women on the national agenda. Are you? <a href="#">@breakthrough</a></p>
             <h1>About</h1>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
         </article>
@@ -125,7 +124,7 @@
                         $content = file_get_contents("http://imherebreakthrough.tumblr.com/rss");
                         $x = new SimpleXmlElement($content);
                         
-                        for ($i = 0; $i <= 8; $i++) {
+                        for ($i = 0; $i <= 14; $i++) {
                             if ($i % 3 == 0) { echo "<tr>"; }
                             $entry = $x->channel->item[$i];
                             preg_match_all('/src=("[^"]*")/i',$entry->description, $result); 
@@ -201,6 +200,10 @@
             <a href="http://thenyic.org" style="display: none;"><img src="images/logos/thenyic.org.jpg" /></a>
             <a href="http://womensrefugeecommission.org" style="display: none;"><img src="images/logos/womensrefugeecommission.org.jpg" /></a>
             <a href="http://thefbomb.org" style="display: none;"><img src="images/logos/thefbomb.org.jpg" /></a>
+            <a href="http://votolatino.org" style="display: none;"><img src="images/logos/votolatino.org.jpg" /></a>
+            <a href="http://reproductiverights.org/" style="display: none;"><img src="images/logos/reproductiverights.org.jpg" /></a>
+            <a href="http://opportunityagenda.org" style="display: none;"><img src="images/logos/opportunityagenda.org.jpg" /></a>
+            <a href="http://weareoneamerica.org" style="display: none;"><img src="images/logos/weareoneamerica.org.jpg" /></a>
         </div>
         <strong>Our Partners</strong>
         <nav>
