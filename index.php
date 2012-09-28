@@ -102,8 +102,11 @@
     
     <section class="articles">
         <article>
-            <div class="video"><iframe width="640" height="308" src="http://www.youtube.com/embed/ZGnyW4exCMw" frameborder="0" allowfullscreen></iframe></div>
-            <p class="noheader"><a href="https://twitter.com/share?text=<?php echo urlencode("#ImHere to put the #humanrights of #immigrant women on the national agenda. Are you? @breakthrough"); ?>&hashtags=ImHere" class="rt"><img src="/images/rt_this.jpg" /></a><a href="#">#ImHere</a> to put the <a href="#">#humanrights</a> of <a href="#">#immigrant</a> women on the national agenda. Are you? <a href="#">@breakthrough</a></p>
+            <div class="video"><iframe width="472" height="308" src="http://www.youtube.com/embed/ZGnyW4exCMw" frameborder="0" allowfullscreen></iframe></div>
+            <p class="noheader">
+                Sonia has worked so hard for this: a healthy family and a normal life in an average American town. But on a night that should have been like any other, Sonia is forced to make an impossible choice that could shatter her family's dreams forever.<br /><br />
+                Keep your daughter safe -- or keep your family together: what call would you make?
+            </p>
             <h1>About</h1>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
         </article>
@@ -128,7 +131,7 @@
                             if ($i % 3 == 0) { echo "<tr>"; }
                             $entry = $x->channel->item[$i];
                             preg_match_all('/src=("[^"]*")/i',$entry->description, $result); 
-                            echo "<td><a href='$entry->link' target='_blank' title='$entry->title'><img " . $result[0][0] . " width='70' /></a></td>";
+                            echo "<td><a href='$entry->link' target='_blank' title='$entry->title'><img " . $result[0][0] . " width='55' /></a></td>";
                             if ($i % 3 == 2) { echo "</tr>"; }
                         }
                     ?>
@@ -200,6 +203,14 @@
             <a href="http://thenyic.org" target="_blank" style="display: none;"><img src="images/logos/thenyic.org.jpg" /></a>
             <a href="http://womensrefugeecommission.org" target="_blank" style="display: none;"><img src="images/logos/womensrefugeecommission.org.jpg" /></a>
             <a href="http://thefbomb.org" target="_blank" style="display: none;"><img src="images/logos/thefbomb.org.jpg" /></a>
+            <a href="http://acluaz.org" target="_blank" style="display: none;"><img src="images/logos/acluaz.org.jpg" /></a>
+            <a href="http://defineamerican.com" target="_blank" style="display: none;"><img src="images/logos/defineamerican.com.jpg" /></a>
+            <a href="http://momsrising.org" target="_blank" style="display: none;"><img src="images/logos/momsrising.org.jpg" /></a>
+            <a href="http://ppnyc.org" target="_blank" style="display: none;"><img src="images/logos/ppnyc.org.jpg" /></a>
+            <a href="http://reformimmigrationforamerica.org" target="_blank" style="display: none;"><img src="images/logos/reformimmigrationforamerica.org.jpg" /></a>
+            <a href="http://rightsworkinggroup.org" target="_blank" style="display: none;"><img src="images/logos/rightsworkinggroup.org.jpg" /></a>
+            <a href="http://unitewomen.org" target="_blank" style="display: none;"><img src="images/logos/unitewomen.org.jpg" /></a>
+            <a href="http://webelongtogether.org" target="_blank" style="display: none;"><img src="images/logos/webelongtogether.org.jpg" /></a>
         </div>
         <strong>Our Partners</strong>
         <nav>
