@@ -22,10 +22,13 @@ section.articles p.big_link a { color: #fff; }
 section.articles a { color: #24abe2; }
 a.rt { float: left; margin: 4px 10px 0 0; }
 
-section.articles div.video { width: 475px; margin: 10px auto; border: 5px #24abe2 solid; -webkit-border-radius: 5px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; height: 308px; }
+section.articles div.video { width: 475px; margin: 10px auto; border: 5px #000 solid; -webkit-border-radius: 5px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; height: 308px; }
 
 section.articles a.share { margin: 0 20px; display: inline-block; color: #fff; font-size: 14px; font-weight: bold; text-transform: uppercase; vertical-align: middle; }
 section.articles a.share img { display: block; margin-bottom: 4px; }
+
+div.social_media_icons { width: 20px; float: right; margin-top: 8px; }
+div.social_media_icons img { padding: 5px 0 5px 9px; }
 
 article.social {
 	padding-left: 30px;
@@ -33,7 +36,7 @@ article.social {
 }
 article.social div.container {
 	background-color: #3f7490; 
-	width: 170px; padding: 5px; margin-right: 10px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+	width: 175px; padding: 5px; margin-right: 10px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
 	float: left;
 }
 article.social div.short { width: 100px; }
@@ -55,10 +58,10 @@ article.social h1.short { width: 70px; }
 	
 .social div.blackcontainer { background-color: #000; padding: 4px 4px 2px 4px; }
 .social div.whitecontainer { background-color: #fff; padding: 108px 4px; }
-.social ul.tweets { width: 163px; }
+.social ul.tweets { width: 168px; }
 .social ul.tweets li { background: #fff; padding: 5px; border-bottom: 2px #000 solid; }
 .social ul.tweets img { display: inline-block; padding: 0 5px 5px 0; vertical-align: top; }
-.social ul.tweets span { display: inline-block; width: 118px; }
+.social ul.tweets span { display: inline-block; width: 123px; }
 .social ul.tweets h2 { font-size: 8pt; color: #ef4036; width: auto; margin: 0; padding: 0; text-align: left; }
 .social ul.tweets h2 a { color: #ef4036; }
 .social ul.tweets p { width: auto; margin: 0; padding: 0; background-color: #fff; color: #000; font-size: 8pt; }

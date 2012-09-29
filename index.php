@@ -103,7 +103,15 @@
     <section class="articles">
         <article>
             <p class="noheader big_link">WATCH THE FILM</p>
-            <div class="video"><iframe width="472" height="308" src="http://www.youtube.com/embed/ZGnyW4exCMw" frameborder="0" allowfullscreen></iframe></div>
+            <div class="social_media_icons">
+                <a href="http://www.facebook.com/letsbreakthrough" target="_blank"><img src="/images/facebook.png" /></a>
+                <a href="http://imherebreakthrough.tumblr.com/" target="_blank"><img src="/images/tumblr.png" /></a>
+                <a href="https://plus.google.com/105730956614394361567/posts" target="_blank"><img src="/images/google_plus.png"></a>
+                <a href="http://www.flickr.com/photos/breakthrough/" target="_blank"><img src="/images/flickr.png"></a>
+                <a href="http://pinterest.com/breakthroughtv/" target="_blank"><img src="/images/pinterest.png" /></a>
+                <a href="https://twitter.com/breakthrough" target="_blank"><img src="/images/twitter.png" /></a>
+            </div>
+            <div class="video"><iframe width="475" height="308" src="http://www.youtube.com/embed/ZGnyW4exCMw" frameborder="0" allowfullscreen></iframe></div>
             <p class="noheader">
                 Sonia has worked so hard for this: a healthy family and a normal life in an average American town. But on a night that should have been like any other, Sonia is forced to make an impossible choice that could shatter her family's dreams forever.<br /><br />
                 Keep your daughter safe -- or keep your family together: what call would you make?
@@ -117,6 +125,8 @@
             <a class="share" href="https://votolatino.turbovote.org/register/start" target="_blank"><img src="images/icon_vote.png" />Vote</a>
             <a class="share" href="http://breakthrough.tv/explore/issue/womens-human-rights/women_and_immigration/" target="_blank"><img src="images/icon_learn.png" />Learn</a>
         </article>
+        
+
         
         <article class="social">
             
@@ -144,7 +154,7 @@
                     <ul class="tweets">
                         <?php
                             date_default_timezone_set('America/New_York');
-                            $url = 'http://search.twitter.com/search.atom?q=%23ImHere%20OR%20%23ImHereIVote';
+                            $url = 'http://search.twitter.com/search.atom?q=%20%23ImHereIVote';
                             $ch = curl_init($url);
                             curl_setopt ($ch, CURLOPT_RETURNTRANSFER, TRUE);
                             $xml = curl_exec ($ch);
@@ -180,7 +190,7 @@
             <div class="container short">
                 <h1 class="short">Facebook</h1>
                 <div class="whitecontainer">
-                    <a href="www.facebook.com/letsbreakthrough"><img src="/images/big_facebook.jpg"></a>
+                    <a href="http://www.facebook.com/letsbreakthrough" target="_blank"><img src="/images/big_facebook.jpg"></a>
                 </div>
             </div>
         </article>
