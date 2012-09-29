@@ -3,16 +3,17 @@ html {
 	width: 100%; height: 100%; min-height: 100%; min-width: 1024px;
 }
 body {
-	background: #052636 url('/images/background.jpg') no-repeat left 250px; color: #fff;
+	background-color: #052636; color: #fff;
 
 }
 	header {
 		background-color: #fff;
-		width: 100%; padding-top: 20px; padding-bottom: 20px; margin-bottom: 20px; border-top: 18px solid #24abe2; border-bottom: 18px solid #000;
+		width: 100%; padding-top: 20px; padding-bottom: 20px; border-top: 18px solid #24abe2; border-bottom: 18px solid #000;
 	}
 	
 	.articles {
-		width: 560px; margin: 0 400px;
+		background: url('/images/background.jpg') no-repeat center top;
+		width: 564px; margin: 0 auto; padding: 20px 20px 20px 400px;
 	}
 		article {
 			background-color: rgba(0,0,0,.5);
