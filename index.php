@@ -102,17 +102,17 @@
     
     <section class="articles">
         <article>
+            <p class="noheader big_link">WATCH THE FILM</p>
             <div class="video"><iframe width="472" height="308" src="http://www.youtube.com/embed/ZGnyW4exCMw" frameborder="0" allowfullscreen></iframe></div>
             <p class="noheader">
                 Sonia has worked so hard for this: a healthy family and a normal life in an average American town. But on a night that should have been like any other, Sonia is forced to make an impossible choice that could shatter her family's dreams forever.<br /><br />
                 Keep your daughter safe -- or keep your family together: what call would you make?
             </p>
-            <h1>About</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <p class="noheader big_link"><a href="https://twitter.com/share?text=<?php echo urlencode("Keep your daughter safe or your family together: what call would you make? Watch & share http://ow.ly/e4jGH @Breakthrough"); ?>&hashtags=ImHereIVote">TWEET THIS</a></p>
         </article>
         
         <article>
-            <a class="share" href="https://twitter.com/share?text=<?php echo urlencode("Lorem's Ipusums text."); ?>&hashtags=ImHere" target="_blank"><img src="images/icon_share.png" />Share</a>
+            <a class="share" name="share" href="https://twitter.com/share?text=<?php echo urlencode("Keep your daughter safe or your family together: what call would you make? Watch & share http://ow.ly/e4jGH @Breakthrough"); ?>&hashtags=ImHereIVote" target="_blank"><img src="images/icon_share.png" />Share</a>
             <a class="share" href="http://imherebreakthrough.tumblr.com/" target="_blank"><img src="images/icon_photos.png" />Photo</a>
             <a class="share" href="https://votolatino.turbovote.org/register/start" target="_blank"><img src="images/icon_vote.png" />Vote</a>
             <a class="share" href="http://breakthrough.tv/explore/issue/womens-human-rights/women_and_immigration/" target="_blank"><img src="images/icon_learn.png" />Learn</a>
@@ -157,14 +157,14 @@
                             $affected = 0;
                             $twelement = new SimpleXMLElement($xml);
 
-                            for ($i = 0; $i <= 2; $i++) {
+                            for ($i = 0; $i <= 1; $i++) {
                                 $entry = $twelement->entry[$i];
                                 $text = trim($entry->title);
                                 $author = trim($entry->author->name);
                                 $time = strtotime($entry->published);
                                 $id = $entry->id;
                                 echo "<li>";
-                                echo "<img src='" . $entry->link[1]["href"] . "' />";
+                                echo "<img src='" . $entry->link[1]["href"] . "' width='30' />";
                                 echo "<span>";
                                 echo "<h2><a href='" . $entry->link["href"] . "' target='_blank'>" . $author . "</a></h2>";
                                 echo "<p>" . $text . "</p>";
@@ -176,11 +176,27 @@
                     </ul>
                 </div>
             </div>
+            
+            <div class="container short">
+                <h1 class="short">Facebook</h1>
+                <div class="whitecontainer">
+                    <a href="www.facebook.com/letsbreakthrough"><img src="/images/big_facebook.jpg"></a>
+                </div>
+            </div>
         </article>
         
         <article class="learn">
             <h1>Learn</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <p>Imagine dropping your child off at school every day afraid that you won't be back at pickup time. Imagine staying with a violent partner because calling the cops could tear you away from your kids. Imagine arranging for a neighbor to take care of your children in case your disappear — which could happen any time.<br /><br />
+                Tough to imagine? This is reality for millions of immigrant women in the United States.<br /><br />
+                
+                In June 2012, President Obama announced a <a href="http://www.whitehouse.gov/the-press-office/2012/06/15/remarks-president-immigration">historic plan</a> to help make this country safer for over one million young immigrants who have built their lives here. Now it's time to ask: <strong>what about their mothers?</strong> Cruel U.S. laws deny immigrant women the right to protect themselves and raise safe, healthy families. In the first six months of 2011 alone, the U.S. deported more than <a href="http://breakthrough.tv/women-immigration_facts/">46,000 parents of American-born children</a>. Other families – especially in states such as Arizona and Alabama — live in fear of these threats, rarely leaving home at all.<br /><br />
+                
+                Many women are also <a href="http://breakthrough.tv/women-immigration-stories/">forced to choose</a> between the threat of an abusive husband and the risk of being detained or deported if they call the police. <a href="http://breakthrough.tv/video/juana-villegas-a-pregnant-woman-detained/">Pregnant mothers</a> give birth in shackles with federal agents by their side. Women and <a href="http://breakthrough.tv/video/esmeralda-a-transgender-detainee-speaks-out/">LGBTQ people</a> suffer in immigrant detention centers, often without due process, under the constant danger of physical and sexual abuse.<br /><br />
+                
+                This is not the America we stand for. But together we can change it. With your help, #ImHere will make the human rights of immigrant women impossible to ignore. Join us and say "#ImHere to put the rights of immigrant women on the national agenda."<br /><br />
+                
+                <a href="#share">Say #ImHere now</a>: Watch and share the short film, "The Call," take a photo, register to vote, and learn more.</p>
         </article>
     </section>
     
@@ -206,11 +222,11 @@
             <a href="http://acluaz.org" target="_blank" style="display: none;"><img src="images/logos/acluaz.org.jpg" /></a>
             <a href="http://defineamerican.com" target="_blank" style="display: none;"><img src="images/logos/defineamerican.com.jpg" /></a>
             <a href="http://momsrising.org" target="_blank" style="display: none;"><img src="images/logos/momsrising.org.jpg" /></a>
-            <a href="http://ppnyc.org" target="_blank" style="display: none;"><img src="images/logos/ppnyc.org.jpg" /></a>
             <a href="http://reformimmigrationforamerica.org" target="_blank" style="display: none;"><img src="images/logos/reformimmigrationforamerica.org.jpg" /></a>
             <a href="http://rightsworkinggroup.org" target="_blank" style="display: none;"><img src="images/logos/rightsworkinggroup.org.jpg" /></a>
             <a href="http://unitewomen.org" target="_blank" style="display: none;"><img src="images/logos/unitewomen.org.jpg" /></a>
             <a href="http://webelongtogether.org" target="_blank" style="display: none;"><img src="images/logos/webelongtogether.org.jpg" /></a>
+            <a href="http://ppnyc.org" target="_blank" style="display: none;"><img src="images/logos/ppnyc.org.jpg" /></a>
         </div>
         <strong>Our Partners</strong>
         <nav>
