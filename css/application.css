@@ -57,7 +57,7 @@ article.social h1.short { width: 70px; }
 	.social td a { height: 55px; overflow: hidden; display: block; }
 	
 .social div.blackcontainer { background-color: #000; padding: 4px 4px 2px 4px; }
-.social div.whitecontainer { background-color: #fff; padding: 108px 4px; }
+.social div.whitecontainer { background-color: #fff; padding: 135px 4px; }
 .social ul.tweets { width: 168px; }
 .social ul.tweets li { background: #fff; padding: 5px; border-bottom: 2px #000 solid; }
 .social ul.tweets img { display: inline-block; padding: 0 5px 5px 0; vertical-align: top; }

@@ -102,7 +102,7 @@
     
     <section class="articles">
         <article>
-            <p class="noheader big_link">WATCH THE FILM</p>
+            <p class="noheader big_link">WATCH IN FULLSCREEN</p>
             <div class="social_media_icons">
                 <a href="http://www.facebook.com/letsbreakthrough" target="_blank"><img src="/images/facebook.png" /></a>
                 <a href="http://imherebreakthrough.tumblr.com/" target="_blank"><img src="/images/tumblr.png" /></a>
@@ -120,13 +120,11 @@
         </article>
         
         <article>
-            <a class="share" name="share" href="https://twitter.com/share?text=<?php echo urlencode("Keep your daughter safe or your family together: what call would you make? Watch & share http://ow.ly/e4jGH @Breakthrough"); ?>&hashtags=ImHereIVote" target="_blank"><img src="images/icon_share.png" />Share</a>
+            <a class="share" name="share" href="http://www.facebook.com/sharer.php?u=http://ow.ly/e4jGH" target="_blank"><img src="images/icon_share.png" />Share</a>
             <a class="share" href="http://imherebreakthrough.tumblr.com/" target="_blank"><img src="images/icon_photos.png" />Photo</a>
             <a class="share" href="https://votolatino.turbovote.org/register/start" target="_blank"><img src="images/icon_vote.png" />Vote</a>
             <a class="share" href="http://breakthrough.tv/explore/issue/womens-human-rights/women_and_immigration/" target="_blank"><img src="images/icon_learn.png" />Learn</a>
         </article>
-        
-
         
         <article class="social">
             
@@ -137,7 +135,7 @@
                         $content = file_get_contents("http://imherebreakthrough.tumblr.com/rss");
                         $x = new SimpleXmlElement($content);
                         
-                        for ($i = 0; $i <= 14; $i++) {
+                        for ($i = 0; $i <= 17; $i++) {
                             if ($i % 3 == 0) { echo "<tr>"; }
                             $entry = $x->channel->item[$i];
                             preg_match_all('/src=("[^"]*")/i',$entry->description, $result); 
