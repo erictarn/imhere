@@ -3,17 +3,18 @@
 <head>
     <title>#ImHere for Immigrant Women</title>
 
-    <script src="/javascripts/modernizr.js" type="text/javascript"></script>
+    <script src="javascripts/modernizr.js" type="text/javascript"></script>
 
-    <link href="/css/reset.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="/css/structure.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="/css/application.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="/css/bar.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/structure.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/application.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/bar.css" media="all" rel="stylesheet" type="text/css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
-    <script src="/javascripts/compatibility.js" type="text/javascript"></script>
-    <script src="/javascripts/bar.js" type="text/javascript"></script>
-    <script src="/javascripts/application.js" type="text/javascript"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+    <script src="javascripts/compatibility.js" type="text/javascript"></script>
+    <script src="javascripts/bar.js" type="text/javascript"></script>
+    <script src="javascripts/application.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="btbar">
@@ -97,24 +98,48 @@
     </div>
     
     <header>
-        <img src="/images/header_logo.png" alt="#ImHere For Immigrant Women" />
+        <img src="images/header_logo.png" alt="#ImHere For Immigrant Women" />
     </header>
+
+    <script>
+    $(function() {
     
+        $( "#dialog-modal" ).dialog({
+            height: 140,
+            modal: true,
+            autoOpen: false,
+            width: 720,
+            open: function() {
+                $( '.ui-widget-overlay' ).click( function() {
+                    $( "#dialog-modal" ).dialog('close');
+                } );
+            }
+        });
+
+        $("#fullscreen_link").click(function(e) {
+            e.preventDefault();
+            $( "#dialog-modal").dialog("open");
+        })
+    });
+    </script>
+
+    <div id="dialog-modal" style="display: none;">
+        <iframe width="720" height="480" src="http://www.youtube.com/embed/jhwhP-ZFbPk" frameborder="0" allowfullscreen></iframe>
+    </div>
     <section class="articles">
         <article>
-            <p class="noheader big_link">WATCH IN FULLSCREEN</p>
+            <p class="noheader big_link"><a href="#" id="fullscreen_link">WATCH THE FILM</a></p>
             <div class="social_media_icons">
-                <a href="http://www.facebook.com/letsbreakthrough" target="_blank"><img src="/images/facebook.png" /></a>
-                <a href="http://imherebreakthrough.tumblr.com/" target="_blank"><img src="/images/tumblr.png" /></a>
-                <a href="https://plus.google.com/105730956614394361567/posts" target="_blank"><img src="/images/google_plus.png"></a>
-                <a href="http://www.flickr.com/photos/breakthrough/" target="_blank"><img src="/images/flickr.png"></a>
-                <a href="http://pinterest.com/breakthroughtv/" target="_blank"><img src="/images/pinterest.png" /></a>
-                <a href="https://twitter.com/breakthrough" target="_blank"><img src="/images/twitter.png" /></a>
+                <a href="http://www.facebook.com/sharer.php?u=http://ow.ly/e4jGH" target="_blank"><img src="images/facebook.png" /></a>
+                <a href="http://tumblr.com/share" target="_blank"><img src="images/tumblr.png" /></a>
+                <a href="https://plus.google.com/share?url=http://ow.ly/e4jGH" target="_blank"><img src="images/google_plus.png"></a>
+                <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fow.ly%2Fe4jGH&media=http%3A%2F%2Fstatic.tumblr.com%2Fjepygxa%2FKE2m95yp1%2Fih_tagline_bt_logo.png" target="_blank"><img src="images/pinterest.png" /></a>
+                <a href="https://twitter.com/share?text=<?php echo urlencode("Keep your daughter safe or your family together: what call would you make? Watch & share http://ow.ly/e4jGH @Breakthrough"); ?>&hashtags=ImHereIVote" target="_blank"><img src="images/twitter.png" /></a>
             </div>
-            <div class="video"><iframe width="475" height="308" src="http://www.youtube.com/embed/ZGnyW4exCMw" frameborder="0" allowfullscreen></iframe></div>
+            <div class="video"><iframe width="475" height="308" src="http://www.youtube.com/embed/jhwhP-ZFbPk" frameborder="0" allowfullscreen></iframe></div>
             <p class="noheader">
-                Sonia has worked so hard for this: a healthy family and a normal life in an average American town. But on a night that should have been like any other, Sonia is forced to make an impossible choice that could shatter her family's dreams forever.<br /><br />
-                Keep your daughter safe -- or keep your family together: what call would you make?
+                Sonia has worked so hard for this: a healthy family and a normal life in an average American town. But on a night that should have been like any other, she is forced to make an impossible choice that could shatter her family’s dreams forever.<br /><br />
+                Keep your daughter safe -- or keep your family together? What call would <em>you</em> make? 
             </p>
             <p class="noheader big_link"><a href="https://twitter.com/share?text=<?php echo urlencode("Keep your daughter safe or your family together: what call would you make? Watch & share http://ow.ly/e4jGH @Breakthrough"); ?>&hashtags=ImHereIVote">TWEET THIS</a></p>
         </article>
@@ -186,17 +211,19 @@
             </div>
             
             <div class="container short">
-                <h1 class="short">Facebook</h1>
+                <h1 class="short">Follow Us</h1>
                 <div class="whitecontainer">
-                    <a href="http://www.facebook.com/letsbreakthrough" target="_blank"><img src="/images/big_facebook.jpg"></a>
+                    <a href="http://www.twitter.com/breakthrough" target="_blank"><img src="images/twitter_big.png"></a>
+                    <a href="http://www.facebook.com/letsbreakthrough" target="_blank"><img src="images/facebook_big.png"></a>
+                    <a href="http://breakthroughtv.tumblr.com/" target="_blank"><img src="images/tumblr_big.png"></a>
                 </div>
             </div>
         </article>
         
         <article class="learn">
             <h1>Learn</h1>
-            <p>Imagine dropping your child off at school every day afraid that you won't be back at pickup time. Imagine staying with a violent partner because calling the cops could tear you away from your kids. Imagine arranging for a neighbor to take care of your children in case your disappear — which could happen any time.<br /><br />
-                Tough to imagine? This is reality for millions of immigrant women in the United States.<br /><br />
+            <p><strong>Imagine</strong> dropping your child off at school every day afraid that you won't be back at pickup time. <strong>Imagine</strong> staying with a violent partner because calling the cops could tear you away from your kids. <strong>Imagine</strong> arranging for a neighbor to take care of your children in case your disappear &mdash; which could happen any time.<br /><br />
+                Tough to imagine? This is <strong>reality</strong> for millions of immigrant women in the United States.<br /><br />
                 
                 In June 2012, President Obama announced a <a href="http://www.whitehouse.gov/the-press-office/2012/06/15/remarks-president-immigration">historic plan</a> to help make this country safer for over one million young immigrants who have built their lives here. Now it's time to ask: <strong>what about their mothers?</strong> Cruel U.S. laws deny immigrant women the right to protect themselves and raise safe, healthy families. In the first six months of 2011 alone, the U.S. deported more than <a href="http://breakthrough.tv/women-immigration_facts/">46,000 parents of American-born children</a>. Other families – especially in states such as Arizona and Alabama — live in fear of these threats, rarely leaving home at all.<br /><br />
                 
@@ -238,7 +265,7 @@
         </div>
         <strong>Our Partners</strong>
         <nav>
-            <a href="http://breakthrough.tv" class="logo"><img src="/images/footer_logo.png" alt="by Breakthrough.tv" /></a>
+            <a href="http://breakthrough.tv" class="logo"><img src="images/footer_logo.png" alt="by Breakthrough.tv" /></a>
             <a href="http://breakthrough.tv/about-us/contact-us/">Contact</a>
             <a href="http://breakthrough.tv/privacy-policy/">Privacy Policy</a>
             <a href="http://breakthrough.tv/terms-of-use/">Terms of Use</a>
