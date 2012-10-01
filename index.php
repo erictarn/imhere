@@ -130,10 +130,10 @@
         <article>
             <p class="noheader big_link"><a href="#" id="fullscreen_link">WATCH THE FILM</a></p>
             <div class="social_media_icons">
-                <a href="http://www.facebook.com/sharer.php?u=http://ow.ly/e4jGH" target="_blank"><img src="images/facebook.png" /></a>
-                <a href="http://tumblr.com/share" target="_blank"><img src="images/tumblr.png" /></a>
-                <a href="https://plus.google.com/share?url=http://ow.ly/e4jGH" target="_blank"><img src="images/google_plus.png"></a>
-                <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fow.ly%2Fe4jGH&media=http%3A%2F%2Fstatic.tumblr.com%2Fjepygxa%2FKE2m95yp1%2Fih_tagline_bt_logo.png" target="_blank"><img src="images/pinterest.png" /></a>
+                <a href="http://www.facebook.com/sharer.php?u=http://www.youtube.com/watch?v=jhwhP-ZFbPk" target="_blank"><img src="images/facebook.png" /></a>
+                <a href="http://www.tumblr.com/share?v=3&u=http://www.youtube.com/watch?v=jhwhP-ZFbPk" target="_blank"><img src="images/tumblr.png" /></a>
+                <a href="https://plus.google.com/share?url=http://www.youtube.com/watch?v=jhwhP-ZFbPk" target="_blank"><img src="images/google_plus.png"></a>
+                <a href="http://pinterest.com/pin/create/button/?url=http://www.youtube.com/watch?v=jhwhP-ZFbPk&media=http%3A%2F%2Fstatic.tumblr.com%2Fjepygxa%2FKE2m95yp1%2Fih_tagline_bt_logo.png" target="_blank"><img src="images/pinterest.png" /></a>
                 <a href="https://twitter.com/share?text=<?php echo urlencode("Keep your daughter safe or your family together: what call would you make? Watch & share http://ow.ly/e4jGH @Breakthrough"); ?>&hashtags=ImHereIVote" target="_blank"><img src="images/twitter.png" /></a>
             </div>
             <div class="video"><iframe width="475" height="308" src="http://www.youtube.com/embed/jhwhP-ZFbPk" frameborder="0" allowfullscreen></iframe></div>
@@ -141,7 +141,7 @@
                 Sonia has worked so hard for this: a healthy family and a normal life in an average American town. But on a night that should have been like any other, she is forced to make an impossible choice that could shatter her family’s dreams forever.<br /><br />
                 Keep your daughter safe -- or keep your family together? What call would <em>you</em> make? 
             </p>
-            <p class="noheader big_link"><a href="https://twitter.com/share?text=<?php echo urlencode("Keep your daughter safe or your family together: what call would you make? Watch & share http://ow.ly/e4jGH @Breakthrough"); ?>&hashtags=ImHereIVote">TWEET THIS</a></p>
+            <p class="noheader big_link"><a href="https://twitter.com/share?text=<?php echo urlencode("Keep your daughter safe or your family together: what call would you make? Watch & share"); ?>&hashtags=ImHereIVote&url=http://ow.ly/e4jGH&via=Breakthrough" target="_blank">TWEET THIS</a></p>
         </article>
         
         <article>
