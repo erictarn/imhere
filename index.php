@@ -133,7 +133,7 @@
                 <a href="http://www.facebook.com/sharer.php?u=http://www.youtube.com/watch?v=jhwhP-ZFbPk" target="_blank"><img src="images/facebook.png" /></a>
                 <a href="http://www.tumblr.com/share?v=3&u=http://www.youtube.com/watch?v=jhwhP-ZFbPk" target="_blank"><img src="images/tumblr.png" /></a>
                 <a href="https://plus.google.com/share?url=http://www.youtube.com/watch?v=jhwhP-ZFbPk" target="_blank"><img src="images/google_plus.png"></a>
-                <a href="http://pinterest.com/pin/create/button/?url=http://www.youtube.com/watch?v=jhwhP-ZFbPk&media=http%3A%2F%2Fstatic.tumblr.com%2Fjepygxa%2FKE2m95yp1%2Fih_tagline_bt_logo.png" target="_blank"><img src="images/pinterest.png" /></a>
+                <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjhwhP-ZFbPk&media=http%3A%2F%2Fstatic.tumblr.com%2Fjepygxa%2FKE2m95yp1%2Fih_tagline_bt_logo.png" target="_blank"><img src="images/pinterest.png" /></a>
                 <a href="https://twitter.com/share?text=<?php echo urlencode("Keep your daughter safe or your family together: what call would you make? Watch & share http://ow.ly/e4jGH @Breakthrough"); ?>&hashtags=ImHereIVote" target="_blank"><img src="images/twitter.png" /></a>
             </div>
             <div class="video"><iframe width="475" height="308" src="http://www.youtube.com/embed/jhwhP-ZFbPk" frameborder="0" allowfullscreen></iframe></div>
