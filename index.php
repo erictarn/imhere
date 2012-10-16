@@ -17,6 +17,20 @@
     <script src="javascripts/application.js" type="text/javascript"></script>
 </head>
 <body>
+<?php
+
+$dbhandle = mysql_connect('mysql51-002.wc1.dfw1.stabletransit.com', '379020_btv', 'aS6DCxYkx');
+mysql_select_db("379020_breakthroughtv",$dbhandle);
+
+$result = mysql_query("SELECT id, post_content FROM wp_posts WHERE id = 1611");
+
+while ($row = mysql_fetch_array($result)) {
+    $tweet_content = $row{'post_content'};
+}
+
+mysql_close();
+
+?>
     <div id="btbar">
         <div class="inner">
             <h1 class="brand active"><a href="http://breakthrough.tv/" class="on">Breakthrough</a></h1>
@@ -134,14 +148,14 @@
                 <a href="http://www.tumblr.com/share?v=3&u=http://www.youtube.com/watch?v=jhwhP-ZFbPk" target="_blank"><img src="images/tumblr.png" /></a>
                 <a href="https://plus.google.com/share?url=http://www.youtube.com/watch?v=jhwhP-ZFbPk" target="_blank"><img src="images/google_plus.png"></a>
                 <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjhwhP-ZFbPk&media=http%3A%2F%2Fstatic.tumblr.com%2Fjepygxa%2FKE2m95yp1%2Fih_tagline_bt_logo.png" target="_blank"><img src="images/pinterest.png" /></a>
-                <a href="https://twitter.com/share?text=<?php echo urlencode("Keep your daughter safe or your family together: what call would you make? Watch & share http://ow.ly/e4jGH @Breakthrough"); ?>&hashtags=ImHereIVote" target="_blank"><img src="images/twitter.png" /></a>
+                <a href="https://twitter.com/share?text=<?php echo urlencode($tweet_content); ?>&hashtags=ImHereIVote" target="_blank"><img src="images/twitter.png" /></a>
             </div>
             <div class="video"><iframe width="475" height="308" src="http://www.youtube.com/embed/jhwhP-ZFbPk" frameborder="0" allowfullscreen></iframe></div>
             <p class="noheader">
                 Sonia has worked so hard for this: a healthy family and a normal life in an average American town. But on a night that should have been like any other, she is forced to make an impossible choice that could shatter her family’s dreams forever.<br /><br />
                 Keep your daughter safe -- or keep your family together? What call would <em>you</em> make? 
             </p>
-            <p class="noheader big_link"><a href="https://twitter.com/share?text=<?php echo urlencode("Keep your daughter safe or your family together: what call would you make? Watch & share"); ?>&hashtags=ImHereIVote&url=http://ow.ly/e4jGH&via=Breakthrough" target="_blank">TWEET THIS</a></p>
+            <p class="noheader big_link"><a href="https://twitter.com/share?text=<?php echo urlencode($tweet_content); ?>&hashtags=ImHereIVote&url=http://ow.ly/e4jGH&via=Breakthrough" target="_blank">TWEET THIS</a></p>
         </article>
         
         <article>
